@@ -8,15 +8,12 @@ class StringBuilder {
   }
   padStart(str) {
     this.#value = str.concat(this.#value);
-    // this.#value = str += this.#value;
   }
   padEnd(str) {
     this.#value = this.#value.concat(str);
-    // this.#value += str;
   }
   padBoth(str) {
     this.#value = str.concat(this.#value).concat(str);
-    // this.#value = str + this.#value + str;
   }
 }
 
