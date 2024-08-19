@@ -10,8 +10,10 @@ class Storage {
     this.#items.push(newItem);
   }
   removeItem(itemToRemove) {
-    let idx = this.#items.indexOf(itemToRemove);
-    this.#items.splice(idx, 1);
+    const idx = this.#items.indexOf(itemToRemove);
+    if (idx !== -1) {
+      this.#items.splice(idx, 1);
+    }
   }
 }
 
